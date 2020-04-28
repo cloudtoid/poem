@@ -1,3 +1,5 @@
 title: NOSE Cloud Architecture
 description: A proposal for the future of cloud-native application development.
 remote_theme: thelehhman/texture
+
+theme: jekyll-theme-minimal
