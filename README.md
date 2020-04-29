@@ -21,10 +21,6 @@ We foresee these platforms relying on code generation and the recompilation of t
 
 Although Poem platforms employ sophisticated techniques to decide on service boundaries and the physical architecture of the application, they allow developers to provide hints to help this process. For example, code markers can indicate the entry point to a code component or mark potential service boundaries. They can also provide hints of the scale characteristics of these components and services. In other words, Poem abstracts away the underlying microservices architecture but gives full flexibility and customization to those that want them.
 
-## What is in the name
-
-The word *Poem* is a play on "**Po**st-**M**icroservices **E**ra" and indicates that the developers should not need to manage the microservice concepts underpinning their application.
-
 ## Poem in action
 
 Over the past 18 months, the Microsoft Bing engineering team has been working on an implementation of Poem to eventually replace the existing workflow that generates the Search Results page. This workflow is called *Bing Front-Page Result* or BFPR and runs mainly as a monolith to reduce latency. However, there are plenty of parallel workflows inside of BFPR that are not considered critical. If they complete within a set timeout, they can provide a potential small boost to the relevance, but they are not essential.
@@ -32,6 +28,14 @@ Over the past 18 months, the Microsoft Bing engineering team has been working on
 For instance, only a small fraction of Bing queries trigger the Lottery Answer. Therefore, it is best to ignore the result of this answer if it fails to complete in a set time.
 
 In such a scenario, Poem can intelligently offload the lottery answer to a separate microservice and execute it in parallel to BFPR. However, a more popular component, such as the Weather Answer, should collocate with the main workflow.
+
+## Serverless architecture
+
+Poem platforms are [serverless](https://en.wikipedia.org/wiki/Serverless_computing) because they provide the resources needed to run an entire application. The main difference is that with today's compute serverless services such as [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and AWS Lambda, developers still need to define service/function boundaries and deal with lower-level communication constructs such HTTP requests and endpoint versioning.
+
+## What is in the name
+
+The word *Poem* is a play on "**Po**st-**M**icroservices **E**ra" that is indicative of the need to upscale cloud-native software development.
 
 ### Author
 
