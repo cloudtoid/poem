@@ -23,4 +23,16 @@ Although Poem platforms employ sophisticated techniques to decide on service bou
 
 ## What is in the name
 
-The word *Poem* is a play on "***Po**st-**M**icroservices **E**ra*" and indicates that the developers should not need to manage the microservice concepts underpinning their application.
+The word *Poem* is a play on "**Po**st-**M**icroservices **E**ra" and indicates that the developers should not need to manage the microservice concepts underpinning their application.
+
+## Poem in action
+
+Over the past 18 months, the Microsoft Bing engineering team has been working on an implementation of Poem to eventually replace the existing workflow that generates the Search Results page. This workflow is called *Bing Front-Page Result* or BFPR and runs mainly as a monolith to reduce latency. However, there are plenty of parallel workflows inside of BFPR that are not considered critical. If they complete within a set timeout, they can provide a potential small boost to the relevance, but they are not essential.
+
+For instance, only a small fraction of Bing queries trigger the Lottery Answer. Therefore, it is best to ignore the result of this answer if it fails to complete in a set time.
+
+In such a scenario, Poem can intelligently offload the lottery answer to a separate microservice and execute it in parallel to BFPR. However, a more popular component, such as the Weather Answer, should collocate with the main workflow.
+
+### Author
+
+[Pedram Rezaei](https://www.linkedin.com/in/pedramrezaei/): Pedram is a software architect at Microsoft with years of experience building highly scalable and reliable cloud platforms and applications.
