@@ -37,6 +37,6 @@ Poem platforms are [serverless](https://en.wikipedia.org/wiki/Serverless_computi
 
 The word *Poem* is a play on "**Po**st-**M**icroservices **E**ra" that is indicative of the need to upscale cloud-native software development.
 
-### Author
+## Author
 
 [Pedram Rezaei](https://www.linkedin.com/in/pedramrezaei/): Pedram is a software architect at Microsoft with years of experience building highly scalable and reliable cloud platforms and applications.
