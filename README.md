@@ -31,7 +31,7 @@ In such a scenario, Poem can intelligently offload the lottery answer to a separ
 
 ## Serverless architecture
 
-Poem platforms are [serverless](https://en.wikipedia.org/wiki/Serverless_computing) because they provide the resources needed to run an entire application. The main difference is that with today's compute serverless services such as [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and AWS Lambda, developers still need to define service/function boundaries and deal with lower-level communication constructs such HTTP requests and endpoint versioning.
+Poem platforms are [serverless](https://en.wikipedia.org/wiki/Serverless_computing) because they provide the resources needed to run an entire application. The main difference is that with today's compute serverless platforms such as [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview) and AWS Lambda, developers should define service/function boundaries and manage lower-level communication constructs such HTTP requests and endpoint versioning.
 
 ## What is in the name
 
