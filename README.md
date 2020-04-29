@@ -25,7 +25,7 @@ Although Poem platforms employ sophisticated techniques to decide on service bou
 
 Over the past 18 months, the Microsoft Bing engineering team has been working on an implementation of Poem to eventually replace the existing workflow that generates the Search Results page. This workflow is called *Bing Front-Page Result* or BFPR and runs mainly as a monolith to reduce latency. However, there are plenty of parallel sub workflows inside of BFPR that are not considered critical. If they complete within a set duration, they can provide a potential small boost to the relevance, but they are not essential.
 
-For instance, only a small fraction of Bing queries trigger the Lottery Answer. Therefore, it is best to ignore the result of this answer if it fails to complete in a set duration.
+For instance, only a small fraction of Bing queries trigger the [Lottery Answer](https://www.bing.com/search?q=lottery). Therefore, it is best to ignore the result of this answer if it fails to complete in a set duration.
 
 In such a scenario, Poem can intelligently offload the lottery answer to a separate microservice and execute it in parallel to BFPR. However, a more popular component, such as the Weather Answer, should collocate with the main workflow.
 
