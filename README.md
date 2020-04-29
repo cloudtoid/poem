@@ -27,7 +27,7 @@ Over the past 18 months, the Microsoft Bing engineering team has been working on
 
 For instance, only a small fraction of Bing queries trigger the [Lottery Answer](https://www.bing.com/search?q=lottery). Therefore, it is best to ignore the result of this answer if it fails to complete in a set duration.
 
-In such a scenario, Poem can intelligently offload the Lottery Answer to a separate microservice and execute it in parallel to BFPR. However, a more popular component, such as the [Weather Answer](https://www.bing.com/search?q=weather), should collocate with the main workflow.
+In such a scenario, Poem can intelligently offload the Lottery Answer to a separate microservice and execute it in parallel to BFPR. However, a more popular component, such as the [Weather Answer](https://www.bing.com/search?q=weather), should collocate with the main workflow to reduce latency.
 
 ## Serverless architecture
 
