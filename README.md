@@ -1,6 +1,6 @@
-# Poem Cloud Architecture
+# Poem Cloud Application Platform
 
-**Poem** is a proposal for a new cloud-native architecture that removes the burden of designing cloud applications with microservices. Simply put, application developers create a monolith backend in their chosen programming language, and a Poem implementation assumes all service decomposition, placement, deployment, and scaling responsibilities.
+**Poem** is a proposal for a cloud platform architecture that removes the burden of designing cloud applications with microservices. Simply put, application developers create a monolith backend in their chosen programming language, and a Poem implementation assumes all service decomposition, placement, deployment, and scaling responsibilities.
 
 A Poem platform frees engineering teams from mundane tasks such as:
 
