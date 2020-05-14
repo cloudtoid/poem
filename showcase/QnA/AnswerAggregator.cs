@@ -32,16 +32,17 @@ namespace QnA
 
             var tasks = new[] { weatherTask, newsTask, restaurantFinderTask, lotteryTask };
 
-            // Only the weather and news answer providers are critical, 
-            // and we should wait for them a minimum of 200 ms to complete.
-            // However, there is no need to block on Lottery or Restaurant 
-            // Finder answer providers.
+            // Only the Weather and News answer providers are critical, and we
+            // wait for them a minimum of 200 ms to complete.
+            // However, there is no need to block on Lottery or Restaurant Finder
+            // answer providers.
 
             Task.WaitAll(new[] { weatherTask, newsTask }, 200);
 
             return tasks
                 .Where(t => t.IsCompletedSuccessfully && t.Result?.ConfidenceScore > 0.65)
-                .Select(t => t.Result)!;
+                .Select(t => t.Result!)
+                .OrderByDescending(a => a.ConfidenceScore);
         }
     }
 }

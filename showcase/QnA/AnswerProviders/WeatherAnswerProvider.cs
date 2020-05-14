@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Poem;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace QnA
 {
+    [PotentialPoemService]
     public class WeatherAnswerProvider : IAnswerProvider
     {
         private static readonly ISet<string> WeatherQuestions = new HashSet<string>(StringComparer.OrdinalIgnoreCase)

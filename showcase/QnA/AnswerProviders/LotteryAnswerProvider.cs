@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Poem;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace QnA
 {
+    [PotentialPoemService]
     public class LotteryAnswerProvider : IAnswerProvider
     {
         private static readonly ISet<string> LotteryQuestions = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
