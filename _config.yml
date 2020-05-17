@@ -86,8 +86,11 @@ social:
     enabled: false
     profileUrl:
 
+analytics:
+  google: UA-166816105-1
+
 # Build settings
-# markdown: kramdown
+markdown: kramdown
 exclude:
   - .sass-cache/
   - .jekyll-cache/
