@@ -71,7 +71,7 @@ links:
       url: https://github.com/cloudtoid/poem
     - title: Sample
       icon: code
-      url: /poem/showcase/QnA/
+      url: /showcase/QnA/
 
 analytics:
   google: UA-166816105-1
