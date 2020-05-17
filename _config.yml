@@ -73,19 +73,6 @@ links:
       icon: code
       url: /poem/showcase/QnA/
 
-social:
-  github:
-    user: prezaei
-    repo: cloudtoid/poem
-  twitter:
-    enabled: false
-    via:
-    hash:
-    account:
-  facebook:
-    enabled: false
-    profileUrl:
-
 analytics:
   google: UA-166816105-1
 
