@@ -1,2 +1,103 @@
-title: Poem
-description: A proposal for the future of cloud-native application development.
+name: Poem
+url: https://cloudpoem.com # the base hostname & protocol for your site, e.g. http://example.com
+theme: jekyll-docs-theme
+remote_theme: allejo/jekyll-docs-theme@v1.0.0-beta.4
+
+license:
+  software: MIT License
+  software_url: https://opensource.org/licenses/MIT
+
+defaults:
+  - scope:
+      path: "" 
+    values:
+      author: Pedram Rezaei
+      disable_anchors: false
+      anchor_headings:
+        anchorBody: '<svg viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill="#999" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg>'
+        beforeHeading: false
+        anchorAttrs: 'style="border: none"'
+  - scope:
+      path: "README.md" 
+    values:
+      homepage: true
+      layout: full
+      title: Poem
+      description: A proposal for the future of cloud-native application development.
+  - scope:
+      path: "showcase/QnA/README.md"
+    values:
+      title: "Sample"
+
+ui:
+  mode: light # 'auto', 'dark', 'light'
+  brand:
+    dark: '#00ceff'
+    light: '#a20000'
+  border_color:
+    dark: '#5f5f5f'
+    light: '#dee2e6'
+  header:
+    trianglify: true
+    dark:
+      color1: '#062a48'
+      color2: '#304e67'
+    light:
+      color1: '#080331'
+      color2: '#673051'
+  masthead:
+    color:
+      dark: '#fff'
+      light: '#fff'
+    align:
+      homepage: 'center'
+      page: 'left'
+
+links:
+  header:
+    - title: GitHub
+      icon: github
+      brand: true
+      url: https://github.com/cloudtoid/poem
+  homepage:
+    - title: View on GitHub
+      icon: github
+      brand: true
+      url: https://github.com/cloudtoid/poem
+  footer:
+    - title: GitHub
+      icon: github
+      brand: true
+      url: https://github.com/cloudtoid/poem
+    - title: Sample
+      icon: code
+      url: /showcase/QnA/
+
+social:
+  github:
+    user: prezaei
+    repo: cloudtoid/poem
+  twitter:
+    enabled: false
+    via:
+    hash:
+    account:
+  facebook:
+    enabled: false
+    profileUrl:
+
+# Build settings
+# markdown: kramdown
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - gemfiles/
+  - jekyll-docs-theme.gemspec
+  - LICENSE.md
