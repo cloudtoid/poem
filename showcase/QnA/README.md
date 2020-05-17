@@ -31,3 +31,7 @@ In summary, the Poem platform removes the burden of designing cloud applications
 - handle endpoint schema and message versioning
 
 [Sample code](https://github.com/cloudtoid/poem/tree/master/showcase/QnA/)
+
+## Author
+
+[Pedram Rezaei](https://www.linkedin.com/in/pedramrezaei/): Pedram is a software architect at Microsoft with years of experience building highly scalable and reliable cloud platforms and applications.
