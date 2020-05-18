@@ -2,7 +2,7 @@ name: Poem
 url: https://cloudpoem.com # the base hostname & protocol for your site, e.g. http://example.com
 theme: jekyll-docs-theme
 remote_theme: allejo/jekyll-docs-theme@v1.0.0-beta.4
-disqus: false
+disqus: true
 
 license:
   software: MIT License
@@ -25,6 +25,7 @@ defaults:
       layout: full
       title: Poem
       description: A proposal for the future of cloud-native application development.
+      comments: true
   - scope:
       path: "showcase/QnA/README.md"
     values:
