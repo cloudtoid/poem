@@ -3,6 +3,7 @@ url: https://cloudpoem.com # the base hostname & protocol for your site, e.g. ht
 theme: jekyll-docs-theme
 remote_theme: allejo/jekyll-docs-theme@v1.0.0-beta.4
 disqus: false
+description: A proposal for the future of cloud-native application development.
 
 license:
   software: MIT License
