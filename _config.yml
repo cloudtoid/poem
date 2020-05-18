@@ -28,6 +28,7 @@ defaults:
   - scope:
       path: "showcase/QnA/README.md"
     values:
+      comments: false
       title: "Sample"
 
 ui:
