@@ -2,7 +2,6 @@ name: Poem
 url: https://cloudpoem.com # the base hostname & protocol for your site, e.g. http://example.com
 theme: jekyll-docs-theme
 remote_theme: allejo/jekyll-docs-theme@v1.0.0-beta.4
-disqus: true
 
 license:
   software: MIT License
@@ -74,6 +73,9 @@ links:
     - title: Sample
       icon: code
       url: /showcase/QnA/
+
+disqus:
+  shortname: poem
 
 analytics:
   google: UA-166816105-1
