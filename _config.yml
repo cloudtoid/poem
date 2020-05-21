@@ -96,3 +96,6 @@ exclude:
   - gemfiles/
   - jekyll-docs-theme.gemspec
   - LICENSE.md
+  - .csproj
+  - .sln
+  - .cs
