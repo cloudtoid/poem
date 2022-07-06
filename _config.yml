@@ -1,6 +1,5 @@
 name: Poem
 url: https://cloudpoem.com # the base hostname & protocol for your site, e.g. http://example.com
-theme: jekyll-docs-theme
 remote_theme: allejo/jekyll-docs-theme@v1.0.0
 
 license:
