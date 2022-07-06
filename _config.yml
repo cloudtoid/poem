@@ -74,9 +74,6 @@ links:
       icon: code
       url: /showcase/QnA/
 
-disqus:
-  shortname: poem
-
 analytics:
   google: UA-166816105-1
 
